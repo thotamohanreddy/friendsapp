@@ -1,0 +1,15 @@
+<div class="card">
+  <div class="card-header text-center">
+    <h1>Editing friend</h1>
+  </div>
+  <div class="card-body">
+    <%= render "form", friend_rec: @friend_rec %>
+  </div>
+  <div class="card-footer text-muted text-center">
+    <%= link_to "Show", @friend_rec,class:"btn btn-secondary" %>
+    <br><br>
+    <%= link_to "Back", friend_recs_path,class:"btn btn-dark" %>
+    <br><br>
+    <%= button_to "Destroy", @friend_rec, method: :delete , data: {confirm:'Are you sure?'} ,class:"btn btn-danger"%></td>
+  </div>
+</div>
